@@ -31,12 +31,13 @@ Arduino libraries:
 
 * dissect a Power Functions 8871 Extension Wire so that it can be controlled by the relays on the Relay Shield.  The key is to connect +9V/0 from the Battery Box to pins C1 and C2 of the XL-Motor to control its direction as follows:
 
-| Direction | forwardPin (4) | reversePin (5) | Control C1 | Control C2 |
-| --------- | -------------- | -------------- | -- | -- |
-| Off       | 0              | 0              | 0  | 0  |
-| Forward   | 1              | 0              | +9 | 0  |
-| Reverse   | 0              | 1              | 0  | +9 |
-| N/A       | 1              | 1              | +9 | +9 |
+<table>
+<tr><td>Direction</td><td>forwardPin (4)</td><td>reversePin (5)</td><td>Control C1</td><td>Control C2</td></tr>
+<tr><td>Off</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>Forward</td><td>1</td><td>0</td><td>+9</td><td>0</td></tr>
+<tr><td>Reverse</td><td>0</td><td>1</td><td>0</td><td>+9</td></tr>
+<tr><td>N/A</td><td>1</td><td>1</td><td>+9</td><td>+9</td></tr>
+</table>
 
 * plug the Relay Shield on top of the Uno, and connect the Form C terminals to the Extension Wire as shown in the schematic
 * connect the XL-Motor to something fun, like a wheeled robot or helicopter
